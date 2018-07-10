@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LOCAL STORAGE</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+	<script src="js/local.js"></script>
+  </head>
+  </head>
+  <body onload="convertCurrency();">
+	<div class="container">
+		<div class="row">
+			<div class ="col-xs-12">
+				<h1>Convert Currency</h1>
+        <table align="center">
+          <tr>
+            <td><input type="number" id="fromAmount" value="1" onKeyup="convertCurrency();"></td>
+            <td>
+              <select id="from" onchange="convertCurrency();">
+                <option value="AUD">Australian Dollar (AUD) </option>
+                <option value="CAD">Canadian Dollar (CAD) </option>
+                <option value="CHF">Swiss Franc(CHF) </option>
+                <option value="GBP" selected>British Pound (GBP) </option>
+                <option value="USD">US Dollar (USD)</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="text" id="toAmount" size="10" disabled></td>
+            <td>
+              <select id="to" onchange="convertCurrency();">
+                <option value="AUD">Australian Dollar (AUD) </option>
+                <option value="CAD">Canadian Dollar (CAD) </option>
+                <option value="CHF">Swiss Franc(CHF) </option>
+                <option value="GBP" >British Pound (GBP) </option>
+                <option value="USD" selected>US Dollar (USD)</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+			</div>
+		</div>
+	</div>
+	
+    
+	  <script src="js/jquery.js"></script>
+	  <script src="js/bootstrap.js"></script>
+  </body>
+</html>
